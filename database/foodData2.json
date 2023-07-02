@@ -1,0 +1,39 @@
+[
+    {
+      "CategoryName": "Biryani/Rice",
+      "name": "Chicken Fried Rice",
+      "img": "https://source.unsplash.com/random/400×500/?burger",
+      "options":[
+        {
+            "half":"130",
+            "full":"220"
+        }
+      ],
+      "description":"nice meal"
+    },
+    {
+        "CategoryName": "Chicken",
+        "name": "Veg Fried Rice",
+        "img": "https://source.unsplash.com/random/400×500/?chicken",
+        "options":[
+          {
+              "half":"100",
+              "full":"200"
+          }
+        ],
+        "description":"good meal"
+      },
+      {
+        "CategoryName": "Pizza",
+        "name": "Hot Pizza",
+        "img": "https://source.unsplash.com/random/400×500/?pizza",
+        "options":[
+          {
+              "half":"150",
+              "full":"210"
+          }
+        ],
+        "description":"bad meal"
+      }
+  ]
+  
