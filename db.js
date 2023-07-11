@@ -1,5 +1,16 @@
-const mongoose = require('mongoose');
-var config = require('./database/mongodb');
+const mongoose = require("mongoose");
+const config = require("./database/mongodb");
 
-mongoose.connect(config.mongo.uri);
-mongoose.connect('mongodb://127.0.0.1:27017/GoFood');
+const connectToMongoDB = async () => {
+  try {
+    await mongoose.connect(config.mongo.uri);
+    console.log("Connected to MongoDB");
+    const fetched_data = await mongoose.connection.db.collection("food_items");
+    const data = await fetched_data.find({}).toArray();
+    console.log(data);    
+  } catch (error) {
+    console.error("Failed to connect to MongoDB", error);
+  }
+};
+
+module.exports = connectToMongoDB;
