@@ -1,0 +1,1 @@
+This project is the backend code of a restaurant app, built to manage and display food menus and allow users to place orders. The frontend code can be found here: https://github.com/AmineBarguellil7/GoFood-Front.
